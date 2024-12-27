@@ -5,154 +5,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fare Change Advocacy</title>
 <style>
-        body {
-                margin: 0;
-                font-family: Arial, sans-serif;
-                background-color: #d3f9d8;
-                scroll-behavior: smooth;
-        }
-        .header {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 10px 20px;
-                background-color: #d3f9d8;
-                border-bottom: 2px solid #050044;
-        }
-        .header .logo img {
-                height: 100px;
-        }
-
-        .header .title-box h1 {
-                margin: 0;
-                color: #000000;
-        }
-        .header .title-box .explore-button {
-                margin-top: 10px;
-                padding: 10px 20px;
-                background-color: #000000;
-                color: #ffffff;
-                border: none;
-                cursor: pointer;
-                text-decoration: none;
-                font-weight: bold;
-                transition: all 0.3s ease;
-        }
-        .image-background {
-                position: relative;
-                width: 100%;
-                height: 60vh;
-                background-image: url('1670.4.jpg');
-                background-size: cover;
-                background-position: center;
-                margin: 0 auto;
-                transition: all 0.3s ease;
-        }
-        .header .title-box .explore-button:hover {
-                background-color: #002244;
-                text-decoration: underline;
-                opacity: 0.8;
-        }
-        .image-background::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.5);
-        }
-        .text-box {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 80%;
-                padding: 20px;
-                background-color: rgba(0, 0, 0, 0.5);
-                border-radius: 15px;
-                text-align: center;
-                z-index: 1;
-                color: white; 
-        }
-        .text-box h1, .text-box p {
-                color: white; 
-        }
-        .text-box .explore-button {
-                margin-top: 10px;
-                padding: 10px 20px;
-                background-color: #ffffff46;
-                color: #ffffff;
-                border: none;
-                cursor: pointer;
-                text-decoration: none;
-                font-weight: bold;
-                border-radius: 15px;
-                transition: all 0.3s ease;
-        }
-        .text-box .explore-button:hover {
-                background-color: #ffffff;
-                color: #000000;
-                text-decoration: underline;
-                opacity: 0.8;
-        }
-        .navbar {
-                width: 100%;
-                background-color: #000000;
-                overflow: hidden;
-                padding: 20px 0;
-                text-align: center;
-                position: sticky;
-                top: 0;
-                z-index: 1000;
-                white-space: nowrap;
-        }
-        .navbar ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                display: inline-block;
-                vertical-align: middle;
-        }
-        .navbar ul li {
-                display: inline;
-                margin: 0 20px;
-        }
-        .navbar ul li a {
-                text-decoration: none;
-                color: #ffffff;
-                font-weight: bold;
-                font-size: 1em;
-                transition: all 0.3s ease;
-                white-space: nowrap;
-        }
-        .navbar ul li a:hover {
-                background-color: #ffffff;
-                color: #000000;
-                text-decoration: underline;
-                opacity: 0.8;
-                padding: 10px 20px;
-                border-radius: 15px;
-        }
-        .navbar ul li.home {
-                display: none;
-        }
-        .content {
-                padding: 20px;
-                background-color: #ffffff;
-        }
-        @media (max-width: 768px) {
-                .text-box {
-                        width: 90%;
-                }
-                .navbar ul li {
-                        margin: 0 10px;
-                }
-                .navbar ul li a {
-                        font-size: 0.9em;
-                }
-        }
+          body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #d3f9d8;
+            scroll-behavior: smooth;
+          }
+          .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #d3f9d8;
+            border-bottom: 2px solid #050044;
+          }
+          .header .logo img {
+            height: 100px;
+          }
+          .header .title-box h1 {
+            margin: 0;
+            color: #000000;
+          }
+          .header .title-box .explore-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+          }
+          .image-background {
+            position: relative;
+            width: 100%;
+            height: 60vh;
+            background-image: url('1670.4.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto;
+            transition: all 0.3s ease;
+          }
+          .header .title-box .explore-button:hover {
+            background-color: #002244;
+            text-decoration: underline;
+            opacity: 0.8;
+          }
+          .image-background::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+          }
+          .text-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            text-align: center;
+            z-index: 1;
+            color: white; 
+          }
+          .text-box h1, .text-box p {
+            color: white; 
+          }
+          .text-box .explore-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ffffff46;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+          }
+          .text-box .explore-button:hover {
+            background-color: #ffffff;
+            color: #000000;
+            text-decoration: underline;
+            opacity: 0.8;
+          }
+          .navbar {
+            width: 100%;
+            background-color: #000000;
+            overflow: hidden;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            white-space: nowrap;
+          }
+          .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .navbar ul li {
+            display: inline;
+            margin: 0 20px;
+          }
+          .navbar ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+          }
+          .navbar ul li a:hover {
+            background-color: #ffffff;
+            color: #000000;
+            text-decoration: underline;
+            opacity: 0.8;
+            padding: 10px 20px;
+            border-radius: 15px;
+          }
+          .navbar ul li.home {
+            display: none;
+          }
+          .content {
+            padding: 20px;
+            background-color: #ffffff;
+          }
+          @media (max-width: 768px) {
+            .text-box {
+              width: 90%;
+            }
+            .navbar ul li {
+              margin: 0 10px;
+            }
+            .navbar ul li a {
+              font-size: 0.9em;
+            }
+          }
+          .navbar ul li a.active,
+          .navbar ul li a.hover {
+            background-color: #ffffff;
+            color: #000000;
+            text-decoration: underline;
+            opacity: 0.8;
+            padding: 10px 20px;
+            border-radius: 15px;
+          }
+          footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding: 20px;
+            background-color: #000000;
+            color: white;
+            width: 100%;
+            box-sizing: border-box;
+          }
 </style>
+</body>
 <script>
         function debounce(func, wait) {
                 let timeout;
@@ -168,15 +189,46 @@
 
         window.addEventListener('scroll', debounce(function() {
                 const homeLink = document.querySelector('.navbar ul li.home');
-                if (window.scrollY === 0) {
-                        homeLink.style.display = 'none';
-                } else {
-                        homeLink.style.display = 'inline';
+                if (homeLink) {
+                        if (window.scrollY === 0) {
+                                homeLink.style.display = 'none';
+                        } else {
+                                homeLink.style.display = 'inline';
+                        }
                 }
+
+                const sections = document.querySelectorAll('section');
+                const navLinks = document.querySelectorAll('.navbar ul li a');
+
+                let currentSection = '';
+                sections.forEach(section => {
+                        const sectionTop = section.offsetTop;
+                        if (pageYOffset >= sectionTop - 60) {
+                                currentSection = section.getAttribute('id');
+                        }
+                });
+
+                navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href').includes(currentSection)) {
+                                link.classList.add('active');
+                        }
+                });
         }, 100));
+
+        document.addEventListener('DOMContentLoaded', function() {
+                const navLinks = document.querySelectorAll('.navbar ul li a');
+                navLinks.forEach(link => {
+                        link.addEventListener('mouseenter', function() {
+                                this.classList.add('hover');
+                        });
+                        link.addEventListener('mouseleave', function() {
+                                this.classList.remove('hover');
+                        });
+                });
+        });
 </script>
-</head>
-<body>
+</html>
 
 <div class="image-background">
         <div class="text-box">
@@ -410,7 +462,7 @@
     <img src="logo.png" alt="Logo" style="max-width: 100%; height: auto;">
 </div>
 <div style="text-align: center;"></div>
-    
+<footer>
 </div>
 <footer style="position: fixed; bottom: 0; left: 0; right: 0; text-align: center; padding: 20px; background-color: #000000; color: white; width: 100%; box-sizing: border-box;">
     <p style="font-size: 20px; margin: 0;">Together for Progress | Advocating for Fair, Transparent, and Sustainable Transportation – 2024 and Beyond.</p>
